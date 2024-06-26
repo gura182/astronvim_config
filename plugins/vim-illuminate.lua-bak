@@ -1,0 +1,25 @@
+return {
+  {
+    "RRethy/vim-illuminate",
+    event = "User AstroFile",
+    opts = {
+      filetypes_denylist = {
+        "dirvish",
+        "fugitive",
+        "help",
+        "startify",
+        "aerial",
+        "alpha",
+        "dashboard",
+        "lazy",
+        "neogitstatus",
+        "NvimTree",
+        "neo-tree",
+        "Trouble",
+        "nofile",
+        "terminal",
+      },
+    },
+    config = function(_, opts) require("illuminate").configure(opts) end,
+  },
+}

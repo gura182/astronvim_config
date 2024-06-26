@@ -9,4 +9,9 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "bronson/vim-trailing-whitespace",
+    event = "User AstroFile",
+    -- event = "User",
+  },
 }
